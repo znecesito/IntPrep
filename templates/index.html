@@ -1,19 +1,12 @@
 {% extends "layout.html" %}
 {% block content0 %}
 
-<form method="POST" action"{{ url_for('home') }}" id="append_node">
-  {{ append_form.hidden_tag() }}
-  <div class="input-group mt-5">
-    <div class="input-group-prepend">
-      <!-- <button class="btn btn-outline-secondary" type="submit">Append</button> -->
-      {{ append_form.append(class="btn btn-outline-secondary") }}
-    </div>
-    <!-- <input type="text" class="form-control" id="data" name="data" aria-describedby="basic-addon3"> -->
-    {{ append_form.data_val(class="form-control") }}
-  </div>
-</form>
-<div>
-
-
+<div class="list-group">
+  <a href="{{ url_for('linked_list', unique_list_key=dict_key) }}" class="list-group-item list-group-item-action">Linked Lists</a>
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
 </div>
+
 {% endblock content0 %}

@@ -7,6 +7,9 @@ class SLinkedList:
     def __init__(self):
         self.headval = None
 
+    def GetHead(self):
+        return self.headval
+
     def ListPrint(self):
         printval = self.headval
         while printval is not None:
